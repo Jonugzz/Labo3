@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  background-color: gray;
+}
+
+.hamburger {
+  color: white;
+}
+
+.menu {
+  display: none;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+}
+
+i {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.logo > img {
+  width: 50px;
+}
+
+ul {
+  list-style: none;
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .logo {
+    margin-left: 17%;
+    margin-right: 100px;
+  }
+
+  .product {
+    border-radius: 5px;
+    border-style: groove;
+    margin-top: 3px;
+    margin-bottom: 2px;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+  
+  p{
+    text-align: left;
+  }
+
+  footer {
+    border-top: 1px groove;
+  }
+}
+
+
+@media screen and (min-width: 1025px) {
+  
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .logo {
+    margin-left: 17%;
+    margin-right: 17%;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    color: white;
+  }
+
+  li {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  p{
+    text-align: left;
+  }
+
+  .product {
+    border-radius: 5px;
+    border-style: groove;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 550px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  footer {
+    border-top: 1px groove;
+  }
+
+}
